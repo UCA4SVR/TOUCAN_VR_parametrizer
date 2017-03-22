@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Vr application">
+        <EditTextPreference android:title="Vr application package"
+            android:key="vrApplicationPackage"
+            android:summary="Please provide the package name of the VR application"
+            android:defaultValue="fr.unice.i3s.uca4svr.toucan_vr.full.debug"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Video List">
+        <EditTextPreference android:title="Local Video XML file"
+            android:key="localVideoXMLFile"
+            android:summary="Please provide the name of the current file containing video entries"
+            android:defaultValue="Toucan/videos.xml"
+            />
+        <EditTextPreference android:title="Remote Video XML file"
+            android:key="remoteVideoXMLFile"
+            android:summary="Please provide the remote URL to update the video list"
+            android:defaultValue="https://www.dropbox.com/s/ohp2hcvd4dqf6ui/remotevideos.xml?dl=0"
+        />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="ExoPlayer parameters">
+        <EditTextPreference android:title="Startup Buffer Size"
+            android:key="startupBufferSize"
+            android:summary="Please provide the Startup Buffer Size"
+            android:defaultValue="64000"
+            android:inputType="number"
+            />
+        <EditTextPreference android:title="Buffer Size"
+            android:key="bufferSize"
+            android:summary="Please provide the Buffer Size"
+            android:defaultValue="64000"
+            android:inputType="number"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>

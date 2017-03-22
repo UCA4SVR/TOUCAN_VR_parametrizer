@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="halfMargin">8dp</dimen>
+    <dimen name="fullMargin">16dp</dimen>
+</resources>
