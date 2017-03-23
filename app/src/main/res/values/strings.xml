@@ -16,4 +16,5 @@
     <string name="ERROR_notFoundPackage">Vr application has not been found!</string>
     <string name="ERROR_notFoundVideoXml">The Video XML file has not been found!</string>
     <string name="ERROR_notOnline">The device is not connected to internet!</string>
+    <string name="ERROR_permissionNotGranted">Please authorize the application to write the device\'s storage!</string>
 </resources>

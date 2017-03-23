@@ -1,6 +1,6 @@
-/**
- * Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
- * Author: Savino Dambra
+/*
+ Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
+ Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 
@@ -10,7 +10,7 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.widget.Toast;
 
-public abstract class StartVRApp {
+abstract class StartVRApp {
     /**
      * When the user has chosen the video to play (identified by an URL), this function starts the VR application.
      * The VR-application package-name is recovered from the app preferences and it is customizable within the app.
@@ -19,8 +19,7 @@ public abstract class StartVRApp {
      * @param videoLink Video URL to be played in VR
      * @param preferences If preferences have already been recovered, parameters are retrieved from them
      */
-    public static void startVR (Context applicationContext, String videoLink, SharedPreferences preferences) {
-
+    static void startVR (Context applicationContext, String videoLink, SharedPreferences preferences) {
         //Retrieving preferences
         if(preferences == null)
             preferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
@@ -38,6 +37,5 @@ public abstract class StartVRApp {
             String notFoundPackage = applicationContext.getResources().getString(R.string.ERROR_notFoundPackage);
             Toast.makeText(applicationContext, notFoundPackage, Toast.LENGTH_SHORT).show();
         }
-
     }
 }

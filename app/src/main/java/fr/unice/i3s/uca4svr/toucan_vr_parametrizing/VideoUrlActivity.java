@@ -1,6 +1,6 @@
-/**
- * Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
- * Author: Savino Dambra
+/*
+ Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
+ Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 
@@ -15,15 +15,16 @@ import android.widget.Toast;
 public class VideoUrlActivity extends AppCompatActivity {
 
     //Private attributes
-    private Button playVideoButton;
     private EditText videoUrlEditText;
     private String url;
-    private String notWellFormedUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_url);
+
+        //Defining variables
+        Button playVideoButton;
 
         //Retrieving the playVideo button
         playVideoButton = (Button) findViewById(R.id.playVideo);
@@ -40,8 +41,7 @@ public class VideoUrlActivity extends AppCompatActivity {
                     StartVRApp.startVR(getApplicationContext(),url,null);
                 } else {
                     //Retrieving and showing the error message
-                    notWellFormedUrl = getResources().getString(R.string.ERROR_notWellFormedUrl);
-                    Toast.makeText(getApplicationContext(), notWellFormedUrl, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.ERROR_notWellFormedUrl), Toast.LENGTH_SHORT).show();
                 }
             }
         });

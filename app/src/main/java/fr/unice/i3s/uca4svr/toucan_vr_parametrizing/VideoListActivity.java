@@ -1,6 +1,6 @@
-/**
- * Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
- * Author: Savino Dambra
+/*
+ Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
+ Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 import android.content.SharedPreferences;
@@ -18,7 +18,6 @@ import java.util.List;
 public class VideoListActivity extends AppCompatActivity {
 
     //Private attributes
-    private ListView videoListViews;
     private List<Video> videos;
     private SharedPreferences preferences;
 
@@ -26,6 +25,9 @@ public class VideoListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video_list);
+
+        //Defining variables
+        ListView videoListViews;
 
         //Retrieving preferences
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -41,7 +43,7 @@ public class VideoListActivity extends AppCompatActivity {
         if(file.exists()) {
             //Creating the video list with attributes
             videos = parser.parse(file);
-            ArrayAdapter<Video> adapter = new ArrayAdapter<Video>(this, R.layout.listviewitems, videos);
+            ArrayAdapter<Video> adapter = new ArrayAdapter<>(this, R.layout.listviewitems, videos);
             videoListViews.setAdapter(adapter);
 
             //ListView listener for catching the clicked item

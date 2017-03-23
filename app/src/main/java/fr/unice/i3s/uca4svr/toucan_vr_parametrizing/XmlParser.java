@@ -1,6 +1,6 @@
-/**
- * Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
- * Author: Savino Dambra
+/*
+ Copyright 2017 Laboratoire I3S, CNRS, Université côte d'azur
+ Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 
@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * Class for parsing the video XML file. It uses the recommended Android XML parser XmlPullParser
  */
-public class XmlParser {
+class XmlParser {
 
     //private attributes
     private List<Video> videos;
@@ -25,14 +25,14 @@ public class XmlParser {
     private String text;
 
     //Main constructor
-    public XmlParser() {
-        videos = new ArrayList<Video>();
+    XmlParser() {
+        videos = new ArrayList<>();
     }
 
     //Main parse method
-    public List<Video> parse(File file) {
-        XmlPullParserFactory factory = null;
-        XmlPullParser parser = null;
+    List<Video> parse(File file) {
+        XmlPullParserFactory factory;
+        XmlPullParser parser;
         try {
             factory = XmlPullParserFactory.newInstance();
             factory.setNamespaceAware(true);
@@ -57,15 +57,15 @@ public class XmlParser {
                             // add video object to list
                             videos.add(video);
                         } else if (tagname.equalsIgnoreCase("name")) {
-                            video.setName(text);
+                            if (video!=null) video.setName(text);
                         } else if (tagname.equalsIgnoreCase("link")) {
-                            video.setLink(text);
+                            if (video!=null) video.setLink(text);
                         } else if (tagname.equalsIgnoreCase("bitrate")) {
-                            video.setBitrate(text);
+                            if (video!=null) video.setBitrate(text);
                         } else if (tagname.equalsIgnoreCase("standard")) {
-                            video.setStandard(text);
+                            if (video!=null) video.setStandard(text);
                         } else if (tagname.equalsIgnoreCase("others")) {
-                            video.setOthers(text);
+                            if (video!=null) video.setOthers(text);
                         }
                         break;
 
@@ -74,9 +74,7 @@ public class XmlParser {
                 }
                 eventType = parser.next();
             }
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (XmlPullParserException | IOException e) {
             e.printStackTrace();
         }
         return videos;
