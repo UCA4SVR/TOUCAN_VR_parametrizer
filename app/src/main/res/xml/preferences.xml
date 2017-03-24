@@ -4,32 +4,44 @@
         <EditTextPreference android:title="Vr application package"
             android:key="vrApplicationPackage"
             android:summary="Please provide the package name of the VR application"
-            android:defaultValue="fr.unice.i3s.uca4svr.toucan_vr.full.debug"
+            android:defaultValue="@string/PREFERENCE_package"
             />
     </PreferenceCategory>
     <PreferenceCategory android:title="Video List">
         <EditTextPreference android:title="Local Video XML file"
             android:key="localVideoXMLFile"
             android:summary="Please provide the name of the current file containing video entries"
-            android:defaultValue="Toucan/videos.xml"
+            android:defaultValue="@string/PREFERENCE_local"
             />
         <EditTextPreference android:title="Remote Video XML file"
             android:key="remoteVideoXMLFile"
             android:summary="Please provide the remote URL to update the video list"
-            android:defaultValue="_"
+            android:defaultValue="@string/PREFERENCE_remote"
         />
     </PreferenceCategory>
     <PreferenceCategory android:title="ExoPlayer parameters">
         <EditTextPreference android:title="Startup Buffer Size"
-            android:key="startupBufferSize"
-            android:summary="Please provide the Startup Buffer Size"
-            android:defaultValue="64000"
+            android:key="bufferForPlayback"
+            android:summary="Please provide the amount of video that it is needed to start the video playback (milliseconds)"
+            android:defaultValue="1500"
             android:inputType="number"
             />
         <EditTextPreference android:title="Buffer Size"
-            android:key="bufferSize"
-            android:summary="Please provide the Buffer Size"
-            android:defaultValue="64000"
+        android:key="bufferForPlaybackAR"
+        android:summary="Please provide the amount of video that it is needed to re-start the video playback after a rebuffering event (milliseconds)"
+        android:defaultValue="1500"
+        android:inputType="number"
+        />
+        <EditTextPreference android:title="Min Buffer Size"
+            android:key="minBufferSize"
+            android:summary="Please provide the default minimum duration of media that the player will attempt to ensure is buffered at all times (milliseconds)."
+            android:defaultValue="15000"
+            android:inputType="number"
+            />
+        <EditTextPreference android:title="Max Buffer Size"
+            android:key="maxBufferSize"
+            android:summary="Please provide the default maximum duration of media that the player will attempt to buffer (milliseconds)"
+            android:defaultValue="30000"
             android:inputType="number"
             />
     </PreferenceCategory>

@@ -29,8 +29,10 @@ abstract class StartVRApp {
         if (launchIntent != null) {
             //Putting extra parameters
             launchIntent.putExtra("videoLink", videoLink);
-            launchIntent.putExtra("startupBufferSize", preferences.getString("startupBufferSize", null));
-            launchIntent.putExtra("bufferSize", preferences.getString("bufferSize", null));
+            launchIntent.putExtra("bufferForPlayback", preferences.getString("bufferForPlayback", null));
+            launchIntent.putExtra("bufferForPlaybackAR", preferences.getString("bufferForPlaybackAR", null));
+            launchIntent.putExtra("minBufferSize", preferences.getString("minBufferSize", null));
+            launchIntent.putExtra("maxBufferSize", preferences.getString("maxBufferSize", null));
             applicationContext.startActivity(launchIntent);
         } else {
             //Package not found: Retrieving and showing the error message
