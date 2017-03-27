@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videos>
+    <video>
+        <name>Roller Coaster</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>64k</bitrate>
+        <standard>Dash</standard>
+    </video>
+    <video>
+        <name>Shark</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>128k</bitrate>
+        <standard>Dash-SRD</standard>
+        <others>Long video</others>
+    </video>
+    <video>
+        <name>Planes</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>512k</bitrate>
+        <standard>Dash-SRD</standard>
+        <others>Short video</others>
+    </video>
+    <video>
+        <name>Roller Coaster</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>64k</bitrate>
+        <standard>Dash</standard>
+    </video>
+    <video>
+        <name>Shark</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>128k</bitrate>
+        <standard>Dash-SRD</standard>
+        <others>Long video</others>
+    </video>
+    <video>
+        <name>Planes</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>512k</bitrate>
+        <standard>Dash-SRD</standard>
+        <others>Short video</others>
+    </video>
+    <video>
+        <name>Roller Coaster</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>64k</bitrate>
+        <standard>Dash</standard>
+    </video>
+    <video>
+        <name>Shark</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>128k</bitrate>
+        <standard>Dash-SRD</standard>
+        <others>Long video</others>
+    </video>
+    <video>
+        <name>Planes</name>
+        <link>http://www.unice.fr</link>
+        <bitrate>512k</bitrate>
+        <standard>Dash-SRD</standard>
+        <others>Short video</others>
+    </video>
+</videos>
