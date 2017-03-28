@@ -1,0 +1,23 @@
+<resources>
+    <string name="appName">Toucan VR Parametrizer</string>
+    <string name="explainationUp">Choose a video from a list</string>
+    <string name="explainationMiddle">Enter the video URL</string>
+    <string name="explainationDown">Update video list from remote URL</string>
+    <string name="url">Please enter the full URL of the video:</string>
+    <string name="urlHint">http://www.example.org/manifest.mpd</string>
+    <string name="urlButt">Insert Url</string>
+    <string name="updButt">Update</string>
+    <string name="choose">Pick up a video from a list</string>
+    <string name="list">Go to the list</string>
+    <string name="play">Play Video</string>
+    <string name="title_activity_main">Toucan VR Parametrizer</string>
+    <string name="ERROR_notWellFormedUrl">You entered a wrong URL!</string>
+    <string name="ERROR_notWellFormedUrlPref">Preferences contain a wrong URL for remote XML video file!</string>
+    <string name="ERROR_notFoundPackage">Vr application has not been found!</string>
+    <string name="ERROR_notFoundVideoXml">The Video XML file has not been found!</string>
+    <string name="ERROR_notOnline">The device is not connected to internet!</string>
+    <string name="ERROR_permissionNotGranted">Please authorize the application to write the device\'s storage!</string>
+    <string name="PREFERENCE_package">fr.unice.i3s.uca4svr.toucan_vr.full.debug</string>
+    <string name="PREFERENCE_local">Toucan/videos.xml</string>
+    <string name="PREFERENCE_remote">_</string>
+</resources>
