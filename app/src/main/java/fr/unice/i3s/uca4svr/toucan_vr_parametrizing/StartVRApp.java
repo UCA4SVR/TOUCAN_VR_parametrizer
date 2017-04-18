@@ -48,6 +48,9 @@ abstract class StartVRApp {
             launchIntent.putExtra("maxBufferSize", preferences.getString("maxBufferSize", null));
             launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", true));
             launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", true));
+            launchIntent.putExtra("W", preferences.getBoolean("W", true));
+            launchIntent.putExtra("H", preferences.getBoolean("H", true));
+            launchIntent.putExtra("tilesCSV", preferences.getBoolean("tilesCSV", true));
             applicationContext.startActivity(launchIntent);
         } else {
             //Package not found: Retrieving and showing the error message
