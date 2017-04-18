@@ -31,7 +31,7 @@ abstract class StartVRApp {
      * @param videoLink Video URL to be played in VR
      * @param preferences If preferences have already been recovered, parameters are retrieved from them
      */
-    static void startVR (Context applicationContext, String videoLink, SharedPreferences preferences) {
+    static void startVR (Context applicationContext, String videoName, String videoLink, SharedPreferences preferences) {
         //Retrieving preferences
         if(preferences == null)
             preferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
@@ -41,10 +41,13 @@ abstract class StartVRApp {
         if (launchIntent != null) {
             //Putting extra parameters
             launchIntent.putExtra("videoLink", videoLink);
+            launchIntent.putExtra("videoName", videoName);
             launchIntent.putExtra("bufferForPlayback", preferences.getString("bufferForPlayback", null));
             launchIntent.putExtra("bufferForPlaybackAR", preferences.getString("bufferForPlaybackAR", null));
             launchIntent.putExtra("minBufferSize", preferences.getString("minBufferSize", null));
             launchIntent.putExtra("maxBufferSize", preferences.getString("maxBufferSize", null));
+            launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", true));
+            launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", true));
             applicationContext.startActivity(launchIntent);
         } else {
             //Package not found: Retrieving and showing the error message

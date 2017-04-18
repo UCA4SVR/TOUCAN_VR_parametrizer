@@ -34,9 +34,13 @@ class Video {
         this.name = this.link = this.bitrate = this.standard = this.others = "";
     }
 
-    //Get function
+    //Get functions
     String getLink() {
         return link;
+    }
+
+    String getName() {
+        return name;
     }
 
     //Set functions used when parsing the XML file

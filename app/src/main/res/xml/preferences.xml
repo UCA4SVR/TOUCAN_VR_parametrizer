@@ -6,6 +6,16 @@
             android:summary="Please provide the package name of the VR application"
             android:defaultValue="@string/PREFERENCE_package"
             />
+        <CheckBoxPreference android:title="Head Motion logging"
+            android:key="headMotionLogging"
+            android:summary="Please choose if you want to log the head motion or not"
+            android:defaultValue="true"
+            />
+        <CheckBoxPreference android:title="Bandwidth logging"
+            android:key="bandwidthLogging"
+            android:summary="Please choose if you want to log the bandwidth consumption or not"
+            android:defaultValue="true"
+            />
     </PreferenceCategory>
     <PreferenceCategory android:title="Video List">
         <EditTextPreference android:title="Local Video XML file"

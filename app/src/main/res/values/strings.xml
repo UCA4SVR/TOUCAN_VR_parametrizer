@@ -4,7 +4,9 @@
     <string name="explainationMiddle">Enter the video URL</string>
     <string name="explainationDown">Update video list from remote URL</string>
     <string name="url">Please enter the full URL of the video:</string>
+    <string name="video">Please enter the video name:</string>
     <string name="urlHint">http://www.example.org/manifest.mpd</string>
+    <string name="nameHint">Video name</string>
     <string name="urlButt">Insert Url</string>
     <string name="updButt">Update</string>
     <string name="choose">Pick up a video from a list</string>
