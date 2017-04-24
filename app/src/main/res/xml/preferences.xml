@@ -65,7 +65,7 @@
         <EditTextPreference android:title="Big H"
             android:key="H"
             android:summary="Please provide the big H"
-            android:defaultValue="1010"
+            android:defaultValue="1080"
             android:inputType="number"
             />
         <EditTextPreference android:title="Tiles CSV string"

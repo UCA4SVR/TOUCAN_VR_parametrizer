@@ -42,15 +42,15 @@ abstract class StartVRApp {
             //Putting extra parameters
             launchIntent.putExtra("videoLink", videoLink);
             launchIntent.putExtra("videoName", videoName);
-            launchIntent.putExtra("bufferForPlayback", preferences.getString("bufferForPlayback", null));
-            launchIntent.putExtra("bufferForPlaybackAR", preferences.getString("bufferForPlaybackAR", null));
-            launchIntent.putExtra("minBufferSize", preferences.getString("minBufferSize", null));
-            launchIntent.putExtra("maxBufferSize", preferences.getString("maxBufferSize", null));
+            launchIntent.putExtra("bufferForPlayback", Integer.parseInt(preferences.getString("bufferForPlayback", null)));
+            launchIntent.putExtra("bufferForPlaybackAR", Integer.parseInt(preferences.getString("bufferForPlaybackAR", null)));
+            launchIntent.putExtra("minBufferSize", Integer.parseInt(preferences.getString("minBufferSize", null)));
+            launchIntent.putExtra("maxBufferSize", Integer.parseInt(preferences.getString("maxBufferSize", null)));
             launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", true));
             launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", true));
-            launchIntent.putExtra("W", preferences.getBoolean("W", true));
-            launchIntent.putExtra("H", preferences.getBoolean("H", true));
-            launchIntent.putExtra("tilesCSV", preferences.getBoolean("tilesCSV", true));
+            launchIntent.putExtra("W", Integer.parseInt(preferences.getString("W", null)));
+            launchIntent.putExtra("H", Integer.parseInt(preferences.getString("H", null)));
+            launchIntent.putExtra("tilesCSV", preferences.getString("tilesCSV", null));
             applicationContext.startActivity(launchIntent);
         } else {
             //Package not found: Retrieving and showing the error message
