@@ -17,7 +17,7 @@
     <string name="ERROR_notWellFormedUrlPref">Preferences contain a wrong URL for remote XML video file!</string>
     <string name="ERROR_notFoundPackage">Vr application has not been found!</string>
     <string name="ERROR_notFoundVideoXml">The Video XML file has not been found!</string>
-    <string name="ERROR_notOnline">The device is not connected to internet!</string>
+    <string name="ERROR_notOnline">The device is not connected to internet or the requested file doesn\'t exist!</string>
     <string name="ERROR_permissionNotGranted">Please authorize the application to write the device\'s storage!</string>
     <string name="PREFERENCE_package">fr.unice.i3s.uca4svr.toucan_vr.full.debug</string>
     <string name="PREFERENCE_local">Toucan/videos.xml</string>
