@@ -55,7 +55,7 @@ public class VideoUrlActivity extends AppCompatActivity {
                 //Check URL syntax
                 if(URLUtil.isValidUrl(url)) {
                     // Start VR activity
-                    StartVRApp.startVR(getApplicationContext(),name,url,null);
+                    StartVRApp.startVR(getApplicationContext(),name,url);
                 } else {
                     //Retrieving and showing the error message
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.ERROR_notWellFormedUrl), Toast.LENGTH_SHORT).show();

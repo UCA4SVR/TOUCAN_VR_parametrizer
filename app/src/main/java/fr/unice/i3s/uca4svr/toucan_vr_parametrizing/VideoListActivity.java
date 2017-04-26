@@ -63,7 +63,13 @@ public class VideoListActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     //Clicked item is given by the attribute "position".
                     // Retrieving the link of the chosen video and start VR activity
-                    StartVRApp.startVR(getApplicationContext(), videos.get(position).getName(), videos.get(position).getLink(), preferences);
+                    StartVRApp.startVR(getApplicationContext(),
+                            videos.get(position).getName(),
+                            videos.get(position).getLink(),
+                            videos.get(position).getW(),
+                            videos.get(position).getH(),
+                            videos.get(position).getTiling(),
+                            preferences);
                 }
             });
         } else {

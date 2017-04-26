@@ -59,13 +59,13 @@
         <EditTextPreference android:title="Big W"
             android:key="W"
             android:summary="Please provide the big W"
-            android:defaultValue="1920"
+            android:defaultValue="3"
             android:inputType="number"
             />
         <EditTextPreference android:title="Big H"
             android:key="H"
             android:summary="Please provide the big H"
-            android:defaultValue="1080"
+            android:defaultValue="3"
             android:inputType="number"
             />
         <EditTextPreference android:title="Tiles CSV string"

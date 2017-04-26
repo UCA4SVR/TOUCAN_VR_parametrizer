@@ -22,5 +22,5 @@
     <string name="PREFERENCE_package">fr.unice.i3s.uca4svr.toucan_vr.full.debug</string>
     <string name="PREFERENCE_local">Toucan/videos.xml</string>
     <string name="PREFERENCE_remote">_</string>
-    <string name="PREFERENCE_tiling">0,0,1,1,1,0,1,1,0,1,1,1,1,1,1,1</string>
+    <string name="PREFERENCE_tiling">"0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1"</string>
 </resources>
