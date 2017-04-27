@@ -12,7 +12,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 
@@ -28,16 +27,29 @@ class Video {
     private String bitrate;
     private String standard;
     private String others;
+    private String W;
+    private String H;
+    private String tiling;
 
     //Default constructor
     Video() {
-        this.name = this.link = this.bitrate = this.standard = this.others = "";
+        this.name = this.link = this.bitrate = this.standard = this.others = this.W = this.H = this.tiling = "";
     }
 
-    //Get function
+    //Get functions
     String getLink() {
         return link;
     }
+
+    String getName() {
+        return name;
+    }
+
+    String getW() { return W; }
+
+    String getH() { return H; }
+
+    String getTiling() { return tiling; }
 
     //Set functions used when parsing the XML file
     void setName(String name) {
@@ -60,9 +72,15 @@ class Video {
         this.others = others;
     }
 
+    void setW(String W) { this.W = W; }
+
+    void setH(String H) { this.H = H; }
+
+    void setTiling(String tiling) { this.tiling = tiling; }
+
     //Formatting the output to show it in the list
     @Override
     public String toString() {
-        return this.name + "\n" + this.link + "\n" + this.bitrate + " - " + this.standard + " - " + this.others;
+        return this.name + "\n" + this.link + "\n" + this.bitrate + " - " + this.standard + " - " + this.others+ "\nTiling Grid: " + this.W + " x " + this.H;
     }
 }

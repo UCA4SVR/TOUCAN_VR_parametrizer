@@ -12,7 +12,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 
@@ -28,7 +27,9 @@ public class VideoUrlActivity extends AppCompatActivity {
 
     //Private attributes
     private EditText videoUrlEditText;
+    private EditText videoNameEditText;
     private String url;
+    private String name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,15 +43,18 @@ public class VideoUrlActivity extends AppCompatActivity {
         playVideoButton = (Button) findViewById(R.id.playVideo);
         //Retrieving the videoUrl EditText
         videoUrlEditText = (EditText) findViewById(R.id.videoUrl);
+        //Retrieving the videoName EditText
+        videoNameEditText = (EditText) findViewById(R.id.videoName);
 
         //Listener for the videoList Button: it launches the VR app if the URL is correct
         playVideoButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 url = videoUrlEditText.getText().toString();
+                name = videoNameEditText.getText().toString();
                 //Check URL syntax
                 if(URLUtil.isValidUrl(url)) {
                     // Start VR activity
-                    StartVRApp.startVR(getApplicationContext(),url,null);
+                    StartVRApp.startVR(getApplicationContext(),name,url);
                 } else {
                     //Retrieving and showing the error message
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.ERROR_notWellFormedUrl), Toast.LENGTH_SHORT).show();
