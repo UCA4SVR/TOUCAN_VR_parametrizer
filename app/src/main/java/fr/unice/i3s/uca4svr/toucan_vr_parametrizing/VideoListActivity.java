@@ -12,7 +12,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 import android.content.SharedPreferences;
@@ -63,7 +62,13 @@ public class VideoListActivity extends AppCompatActivity {
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                     //Clicked item is given by the attribute "position".
                     // Retrieving the link of the chosen video and start VR activity
-                    StartVRApp.startVR(getApplicationContext(), videos.get(position).getLink(), preferences);
+                    StartVRApp.startVR(getApplicationContext(),
+                            videos.get(position).getName(),
+                            videos.get(position).getLink(),
+                            videos.get(position).getW(),
+                            videos.get(position).getH(),
+                            videos.get(position).getTiling(),
+                            preferences);
                 }
             });
         } else {

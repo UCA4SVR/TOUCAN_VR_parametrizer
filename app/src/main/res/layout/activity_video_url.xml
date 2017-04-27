@@ -5,23 +5,35 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/explaination_up_tw"
         android:layout_below="@+id/toolbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fullMargin"
-        android:text="@string/url"
-        android:id="@+id/explaination_up_tw" />
-
+        android:text="@string/video" />
+    <EditText
+        android:id="@+id/videoName"
+        android:layout_below="@+id/explaination_up_tw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fullMargin"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nameHint" />
+    <TextView
+        android:id="@+id/explaination_middle_tw"
+        android:layout_below="@+id/videoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fullMargin"
+        android:text="@string/url" />
     <EditText
         android:id="@+id/videoUrl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/explaination_up_tw"
+        android:layout_below="@+id/explaination_middle_tw"
         android:layout_marginLeft="@dimen/fullMargin"
         android:layout_centerHorizontal="true"
-        android:ems="10"
         android:text="@string/urlHint" />
-
     <Button
         android:id="@+id/playVideo"
         android:layout_width="wrap_content"
@@ -30,5 +42,4 @@
         android:layout_margin="@dimen/fullMargin"
         android:layout_centerHorizontal="true"
         android:text="@string/play" />
-
 </RelativeLayout>

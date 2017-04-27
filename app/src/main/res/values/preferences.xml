@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- VR Application Category -->
+    <string name="PREFERENCE_VR_application_category_title">Vr application</string>
+
+    <string name="PREFERENCE_VR_app_package_title">VR Application Package</string>
+    <string name="PREFERENCE_VR_app_package_key" translatable="false">vrApplicationPackage</string>
+    <string name="PREFERENCE_VR_app_package_summary">Please provide the package name of the VR application</string>
+    <string name="PREFERENCE_VR_app_package_default" translatable="false">fr.unice.i3s.uca4svr.toucan_vr.full.debug</string>
+
+    <string name="PREFERENCE_head_log_title">Head Motion logging</string>
+    <string name="PREFERENCE_head_log_key" translatable="false">headMotionLogging</string>
+    <string name="PREFERENCE_head_log_summary">Please choose if you want to log the head motion or not</string>
+    <bool name="PREFERENCE_head_log_default">false</bool>
+
+    <string name="PREFERENCE_bandwidth_log_title">Bandwidth logging</string>
+    <string name="PREFERENCE_bandwidth_log_key" translatable="false">bandwidthLogging</string>
+    <string name="PREFERENCE_bandwidth_log_summary">Please choose if you want to log the bandwidth consumption or not</string>
+    <bool name="PREFERENCE_bandwidth_log_default">false</bool>
+
+    <!-- Video List Category -->
+    <string name="PREFERENCE_video_list_category_title">Video List</string>
+
+    <string name="PREFERENCE_local_list_title">Local Video XML file</string>
+    <string name="PREFERENCE_local_list_key" translatable="false">localVideoXMLFile</string>
+    <string name="PREFERENCE_local_list_summary">Please provide the name of the current file containing video entries</string>
+    <string name="PREFERENCE_local_list_default" translatable="false">Toucan/videos.xml</string>
+
+    <string name="PREFERENCE_remote_list_title">Remote Video XML file</string>
+    <string name="PREFERENCE_remote_list_key" translatable="false">remoteVideoXMLFile</string>
+    <string name="PREFERENCE_remote_list_summary">Please provide the remote URL to update the video list</string>
+    <string name="PREFERENCE_remote_list_default" translatable="false">_</string>
+
+    <!-- Exoplayer Parameters Category -->
+    <string name="PREFERENCE_exoplayer_params_category_title">ExoPlayer parameters</string>
+
+    <string name="PREFERENCE_startup_buffer_title">Startup Buffer Size</string>
+    <string name="PREFERENCE_startup_buffer_key" translatable="false">bufferForPlayback</string>
+    <string name="PREFERENCE_startup_buffer_summary">Please provide the amount of video that it is needed to start the video playback (milliseconds)</string>
+    <integer name="PREFERENCE_startup_buffer_default">1500</integer>
+
+    <string name="PREFERENCE_rebuffering_buffer_title">Rebuffer Size</string>
+    <string name="PREFERENCE_rebuffering_buffer_key" translatable="false">bufferForPlaybackAR</string>
+    <string name="PREFERENCE_rebuffering_buffer_summary">Please provide the amount of video that it is needed to re-start the video playback after a rebuffering event (milliseconds)</string>
+    <integer name="PREFERENCE_rebuffering_buffer_default">1500</integer>
+
+    <string name="PREFERENCE_min_buffer_title">Min Buffer Size</string>
+    <string name="PREFERENCE_min_buffer_key" translatable="false">minBufferSize</string>
+    <string name="PREFERENCE_min_buffer_summary">Please provide the default minimum duration of media that the player will attempt to ensure is buffered at all times (milliseconds).</string>
+    <integer name="PREFERENCE_min_buffer_default">15000</integer>
+
+    <string name="PREFERENCE_max_buffer_title">Max Buffer Size</string>
+    <string name="PREFERENCE_max_buffer_key" translatable="false">maxBufferSize</string>
+    <string name="PREFERENCE_max_buffer_summary">Please provide the default maximum duration of media that the player will attempt to buffer (milliseconds)</string>
+    <integer name="PREFERENCE_max_buffer_default">30000</integer>
+
+    <!-- Tiling Category -->
+    <string name="PREFERENCE_tiling_category_title">Temporary tiling parameters</string>
+
+    <string name="PREFERENCE_grid_width_title">Tiling grid width</string>
+    <string name="PREFERENCE_grid_width_key" translatable="false">W</string>
+    <string name="PREFERENCE_grid_width_summary">Please provide the total width of the tiling grid</string>
+    <integer name="PREFERENCE_grid_width_default">3</integer>
+
+    <string name="PREFERENCE_grid_height_title">Tiling grid height</string>
+    <string name="PREFERENCE_grid_height_key" translatable="false">H</string>
+    <string name="PREFERENCE_grid_height_summary">Please provide the total height of the tiling grid</string>
+    <integer name="PREFERENCE_grid_height_default">3</integer>
+
+    <string name="PREFERENCE_tiling_title">Tiles CSV string</string>
+    <string name="PREFERENCE_tiling_key" translatable="false">tilesCSV</string>
+    <string name="PREFERENCE_tiling_summary">Please provide the tiles definition as a CSV String</string>
+    <string name="PREFERENCE_tiling_default">"0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1"</string>
+</resources>
