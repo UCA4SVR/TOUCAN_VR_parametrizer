@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="Vr application">
-        <EditTextPreference android:title="Vr application package"
-            android:key="vrApplicationPackage"
-            android:summary="Please provide the package name of the VR application"
-            android:defaultValue="@string/PREFERENCE_package"
+    <PreferenceCategory android:title="@string/PREFERENCE_VR_application_category_title">
+        <EditTextPreference android:title="@string/PREFERENCE_VR_app_package_title"
+            android:key="@string/PREFERENCE_VR_app_package_key"
+            android:summary="@string/PREFERENCE_VR_app_package_summary"
+            android:defaultValue="@string/PREFERENCE_VR_app_package_default"
             />
-        <CheckBoxPreference android:title="Head Motion logging"
-            android:key="headMotionLogging"
-            android:summary="Please choose if you want to log the head motion or not"
-            android:defaultValue="true"
+        <CheckBoxPreference android:title="@string/PREFERENCE_head_log_title"
+            android:key="@string/PREFERENCE_head_log_key"
+            android:summary="@string/PREFERENCE_head_log_summary"
+            android:defaultValue="@bool/PREFERENCE_head_log_default"
             />
-        <CheckBoxPreference android:title="Bandwidth logging"
-            android:key="bandwidthLogging"
-            android:summary="Please choose if you want to log the bandwidth consumption or not"
-            android:defaultValue="true"
+        <CheckBoxPreference android:title="@string/PREFERENCE_bandwidth_log_title"
+            android:key="@string/PREFERENCE_bandwidth_log_key"
+            android:summary="@string/PREFERENCE_bandwidth_log_summary"
+            android:defaultValue="@bool/PREFERENCE_bandwidth_log_default"
             />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Video List">
-        <EditTextPreference android:title="Local Video XML file"
-            android:key="localVideoXMLFile"
-            android:summary="Please provide the name of the current file containing video entries"
-            android:defaultValue="@string/PREFERENCE_local"
+    <PreferenceCategory android:title="@string/PREFERENCE_video_list_category_title">
+        <EditTextPreference android:title="@string/PREFERENCE_local_list_title"
+            android:key="@string/PREFERENCE_local_list_key"
+            android:summary="@string/PREFERENCE_local_list_summary"
+            android:defaultValue="@string/PREFERENCE_local_list_default"
             />
-        <EditTextPreference android:title="Remote Video XML file"
-            android:key="remoteVideoXMLFile"
-            android:summary="Please provide the remote URL to update the video list"
-            android:defaultValue="@string/PREFERENCE_remote"
+        <EditTextPreference android:title="@string/PREFERENCE_remote_list_title"
+            android:key="@string/PREFERENCE_remote_list_key"
+            android:summary="@string/PREFERENCE_remote_list_summary"
+            android:defaultValue="@string/PREFERENCE_remote_list_default"
         />
     </PreferenceCategory>
-    <PreferenceCategory android:title="ExoPlayer parameters">
-        <EditTextPreference android:title="Startup Buffer Size"
-            android:key="bufferForPlayback"
-            android:summary="Please provide the amount of video that it is needed to start the video playback (milliseconds)"
-            android:defaultValue="1500"
+    <PreferenceCategory android:title="@string/PREFERENCE_exoplayer_params_category_title">
+        <EditTextPreference android:title="@string/PREFERENCE_startup_buffer_title"
+            android:key="@string/PREFERENCE_startup_buffer_key"
+            android:summary="@string/PREFERENCE_startup_buffer_summary"
+            android:defaultValue="@integer/PREFERENCE_startup_buffer_default"
             android:inputType="number"
             />
-        <EditTextPreference android:title="Buffer Size"
-        android:key="bufferForPlaybackAR"
-        android:summary="Please provide the amount of video that it is needed to re-start the video playback after a rebuffering event (milliseconds)"
-        android:defaultValue="1500"
+        <EditTextPreference android:title="@string/PREFERENCE_rebuffering_buffer_title"
+        android:key="@string/PREFERENCE_rebuffering_buffer_key"
+        android:summary="@string/PREFERENCE_rebuffering_buffer_summary"
+        android:defaultValue="@integer/PREFERENCE_rebuffering_buffer_default"
         android:inputType="number"
         />
-        <EditTextPreference android:title="Min Buffer Size"
-            android:key="minBufferSize"
-            android:summary="Please provide the default minimum duration of media that the player will attempt to ensure is buffered at all times (milliseconds)."
-            android:defaultValue="15000"
+        <EditTextPreference android:title="@string/PREFERENCE_min_buffer_title"
+            android:key="@string/PREFERENCE_min_buffer_key"
+            android:summary="@string/PREFERENCE_min_buffer_summary"
+            android:defaultValue="@integer/PREFERENCE_min_buffer_default"
             android:inputType="number"
             />
-        <EditTextPreference android:title="Max Buffer Size"
-            android:key="maxBufferSize"
-            android:summary="Please provide the default maximum duration of media that the player will attempt to buffer (milliseconds)"
-            android:defaultValue="30000"
+        <EditTextPreference android:title="@string/PREFERENCE_max_buffer_title"
+            android:key="@string/PREFERENCE_max_buffer_key"
+            android:summary="@string/PREFERENCE_max_buffer_summary"
+            android:defaultValue="@integer/PREFERENCE_max_buffer_default"
             android:inputType="number"
             />
     </PreferenceCategory>
-    <PreferenceCategory android:title="Temporary tiling parameters">
-        <EditTextPreference android:title="Big W"
-            android:key="W"
-            android:summary="Please provide the big W"
-            android:defaultValue="3"
+    <PreferenceCategory android:title="@string/PREFERENCE_tiling_category_title">
+        <EditTextPreference android:title="@string/PREFERENCE_grid_width_title"
+            android:key="@string/PREFERENCE_grid_width_key"
+            android:summary="@string/PREFERENCE_grid_width_summary"
+            android:defaultValue="@integer/PREFERENCE_grid_width_default"
             android:inputType="number"
             />
-        <EditTextPreference android:title="Big H"
-            android:key="H"
-            android:summary="Please provide the big H"
-            android:defaultValue="3"
+        <EditTextPreference android:title="@string/PREFERENCE_grid_height_title"
+            android:key="@string/PREFERENCE_grid_height_key"
+            android:summary="@string/PREFERENCE_grid_height_summary"
+            android:defaultValue="@integer/PREFERENCE_grid_height_default"
             android:inputType="number"
             />
-        <EditTextPreference android:title="Tiles CSV string"
-            android:key="tilesCSV"
-            android:summary="Please provide the tile CSV String"
-            android:defaultValue="@string/PREFERENCE_tiling"
+        <EditTextPreference android:title="@string/PREFERENCE_tiling_title"
+            android:key="@string/PREFERENCE_tiling_key"
+            android:summary="@string/PREFERENCE_tiling_summary"
+            android:defaultValue="@string/PREFERENCE_tiling_default"
             />
     </PreferenceCategory>
 </PreferenceScreen>

@@ -19,8 +19,4 @@
     <string name="ERROR_notFoundVideoXml">The Video XML file has not been found!</string>
     <string name="ERROR_notOnline">The device is not connected to internet or the requested file doesn\'t exist!</string>
     <string name="ERROR_permissionNotGranted">Please authorize the application to write the device\'s storage!</string>
-    <string name="PREFERENCE_package">fr.unice.i3s.uca4svr.toucan_vr.full.debug</string>
-    <string name="PREFERENCE_local">Toucan/videos.xml</string>
-    <string name="PREFERENCE_remote">_</string>
-    <string name="PREFERENCE_tiling">"0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1"</string>
 </resources>

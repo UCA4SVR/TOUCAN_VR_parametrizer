@@ -12,7 +12,6 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * Author: Savino Dambra
  */
 package fr.unice.i3s.uca4svr.toucan_vr_parametrizing;
 
@@ -20,7 +19,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.widget.Toast;
 
 abstract class StartVRApp {
@@ -33,7 +31,8 @@ abstract class StartVRApp {
      * @param videoLink Video URL to be played in VR
      * @param W Number of rows in the tiling grid
      * @param H Number of columns in the tiling grid
-     * @param tiling Grid composition: quartets of values formatted as x,y,w,h
+     * @param tiling Grid composition: quartets of values formatted as x,y,w,h in the tiling grid coordinates.
+     *               x,y is the starting position of the tile, w,h the width and height of the tile.
      * @param preferences If preferences have already been recovered, parameters are retrieved from them
      */
     static void startVR (Context applicationContext, String videoName, String videoLink, String W, String H, String tiling, SharedPreferences preferences) {

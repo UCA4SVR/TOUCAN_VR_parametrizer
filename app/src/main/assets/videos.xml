@@ -1,63 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <videos>
     <video>
-        <name>Roller Coaster</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>64k</bitrate>
-        <standard>Dash</standard>
+        <name>Aligned ROI</name>
+        <link>ROI_allineati.mp4</link>
+        <bitrate>12133</bitrate>
+        <standard>standard mp4</standard>
+        <W>1</W>
+	   <H>1</H>
+        <tiling>0,0,1,1</tiling>
+
     </video>
     <video>
-        <name>Shark</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>128k</bitrate>
-        <standard>Dash-SRD</standard>
-        <others>Long video</others>
+        <name>Misaligned ROI</name>
+        <link>ROI_nonallineati.mp4</link>
+        <bitrate>12133</bitrate>
+        <standard>standard mp4</standard>
+	   <W>1</W>
+	   <H>1</H>
+        <tiling>0,0,1,1</tiling>
     </video>
     <video>
-        <name>Planes</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>512k</bitrate>
-        <standard>Dash-SRD</standard>
-        <others>Short video</others>
+        <name>Basketball</name>
+        <link>http://download.tsi.telecom-paristech.fr/gpac/SRD/360/srd_360.mpd</link>
+        <bitrate>131694</bitrate>
+        <standard>Dash tiled</standard>
+	   <W>3</W>
+	   <H>3</H>  		  <tiling>0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1</tiling>
     </video>
-    <video>
-        <name>Roller Coaster</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>64k</bitrate>
-        <standard>Dash</standard>
+<video>
+        <name>Numbers (4sec)</name>
+        <link>http://pighetti.fr/new/manifest.mpd</link>
+        <bitrate>131694</bitrate>
+        <standard>Dash tiled</standard>
+	   <W>3</W>
+	   <H>3</H>  		  <tiling>0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1</tiling>
     </video>
-    <video>
-        <name>Shark</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>128k</bitrate>
-        <standard>Dash-SRD</standard>
-        <others>Long video</others>
+<video>
+        <name>Numbers (1.5sec)</name>
+        <link>http://pighetti.fr/new1500/manifest.mpd</link>
+        <bitrate>131694</bitrate>
+        <standard>Dash tiled</standard>
+	   <W>3</W>
+	   <H>3</H>  		  <tiling>0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1</tiling>
     </video>
-    <video>
-        <name>Planes</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>512k</bitrate>
-        <standard>Dash-SRD</standard>
-        <others>Short video</others>
-    </video>
-    <video>
-        <name>Roller Coaster</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>64k</bitrate>
-        <standard>Dash</standard>
-    </video>
-    <video>
-        <name>Shark</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>128k</bitrate>
-        <standard>Dash-SRD</standard>
-        <others>Long video</others>
-    </video>
-    <video>
-        <name>Planes</name>
-        <link>http://www.unice.fr</link>
-        <bitrate>512k</bitrate>
-        <standard>Dash-SRD</standard>
-        <others>Short video</others>
-    </video>
+
+
 </videos>
