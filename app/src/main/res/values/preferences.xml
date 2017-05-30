@@ -19,6 +19,11 @@
     <string name="PREFERENCE_bandwidth_log_summary">Please choose if you want to log the bandwidth consumption or not</string>
     <bool name="PREFERENCE_bandwidth_log_default">false</bool>
 
+    <string name="PREFERENCE_freezing_log_title">Freezing events logging</string>
+    <string name="PREFERENCE_freezing_log_key" translatable="false">freezingEventsLogging</string>
+    <string name="PREFERENCE_freezing_log_summary">Please choose if you want to log the freezing events or not</string>
+    <bool name="PREFERENCE_freezing_log_default">false</bool>
+
     <!-- Video List Category -->
     <string name="PREFERENCE_video_list_category_title">Video List</string>
 

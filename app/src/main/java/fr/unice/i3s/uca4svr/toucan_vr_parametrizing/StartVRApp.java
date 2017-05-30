@@ -50,8 +50,9 @@ abstract class StartVRApp {
             launchIntent.putExtra("bufferForPlaybackAR", Integer.parseInt(preferences.getString("bufferForPlaybackAR", null)));
             launchIntent.putExtra("minBufferSize", Integer.parseInt(preferences.getString("minBufferSize", null)));
             launchIntent.putExtra("maxBufferSize", Integer.parseInt(preferences.getString("maxBufferSize", null)));
-            launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", true));
-            launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", true));
+            launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", false));
+            launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", false));
+            launchIntent.putExtra("freezingEventsLogging", preferences.getBoolean("freezingEventsLogging", false));
             launchIntent.putExtra("W", Integer.parseInt(W));
             launchIntent.putExtra("H", Integer.parseInt(H));
             launchIntent.putExtra("tilesCSV", tiling);
@@ -83,8 +84,9 @@ abstract class StartVRApp {
             launchIntent.putExtra("bufferForPlaybackAR", Integer.parseInt(preferences.getString("bufferForPlaybackAR", null)));
             launchIntent.putExtra("minBufferSize", Integer.parseInt(preferences.getString("minBufferSize", null)));
             launchIntent.putExtra("maxBufferSize", Integer.parseInt(preferences.getString("maxBufferSize", null)));
-            launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", true));
-            launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", true));
+            launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", false));
+            launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", false));
+            launchIntent.putExtra("freezingEventsLogging", preferences.getBoolean("freezingEventsLogging", false));
             launchIntent.putExtra("W", Integer.parseInt(preferences.getString("W", null)));
             launchIntent.putExtra("H", Integer.parseInt(preferences.getString("H", null)));
             launchIntent.putExtra("tilesCSV", preferences.getString("tilesCSV", null));
