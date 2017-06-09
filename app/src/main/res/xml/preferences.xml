@@ -78,5 +78,10 @@
             android:summary="@string/PREFERENCE_tiling_summary"
             android:defaultValue="@string/PREFERENCE_tiling_default"
             />
+        <EditTextPreference android:title="@string/PREFERENCE_dynamic_title"
+                            android:key="@string/PREFERENCE_dynamic_key"
+                            android:summary="@string/PREFERENCE_dynamic_summary"
+                            android:defaultValue="@string/PREFERENCE_dynamic_default"
+            />
     </PreferenceCategory>
 </PreferenceScreen>

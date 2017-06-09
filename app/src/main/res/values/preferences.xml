@@ -77,4 +77,9 @@
     <string name="PREFERENCE_tiling_key" translatable="false">tilesCSV</string>
     <string name="PREFERENCE_tiling_summary">Please provide the tiles definition as a CSV String</string>
     <string name="PREFERENCE_tiling_default">"0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1"</string>
+
+    <string name="PREFERENCE_dynamic_title">Dynamic Editing XML file path</string>
+    <string name="PREFERENCE_dynamic_key" translatable="false">dynamicEditingFN</string>
+    <string name="PREFERENCE_dynamic_summary">Please provide the name of the current file containing dynamic editing details</string>
+    <string name="PREFERENCE_dynamic_default">"toucan/dynamic.xml"</string>
 </resources>

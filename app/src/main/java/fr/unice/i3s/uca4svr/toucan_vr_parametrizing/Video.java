@@ -30,10 +30,11 @@ class Video {
     private String W;
     private String H;
     private String tiling;
+    private String dynamicEditingFN;
 
     //Default constructor
     Video() {
-        this.name = this.link = this.bitrate = this.standard = this.others = this.W = this.H = this.tiling = "";
+        this.name = this.link = this.bitrate = this.standard = this.others = this.W = this.H = this.tiling = this.dynamicEditingFN = "";
     }
 
     //Get functions
@@ -50,6 +51,8 @@ class Video {
     String getH() { return H; }
 
     String getTiling() { return tiling; }
+
+    String getDynamicEditingFN() { return dynamicEditingFN; }
 
     //Set functions used when parsing the XML file
     void setName(String name) {
@@ -78,9 +81,15 @@ class Video {
 
     void setTiling(String tiling) { this.tiling = tiling; }
 
+    void setDynamicEditingFN(String dynamicEditingFN) { this.dynamicEditingFN = dynamicEditingFN; }
+
     //Formatting the output to show it in the list
     @Override
     public String toString() {
-        return this.name + "\n" + this.link + "\n" + this.bitrate + " - " + this.standard + " - " + this.others+ "\nTiling Grid: " + this.W + " x " + this.H;
+        return this.name + "\n" +
+                this.link + "\n" +
+                this.bitrate + " - " + this.standard + " - " + this.others+ "\n" +
+                "Tiling Grid: " + this.W + " x " + this.H+ "\n" +
+                "Dynamic Editing: "+this.dynamicEditingFN;
     }
 }

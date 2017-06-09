@@ -35,7 +35,7 @@ abstract class StartVRApp {
      *               x,y is the starting position of the tile, w,h the width and height of the tile.
      * @param preferences If preferences have already been recovered, parameters are retrieved from them
      */
-    static void startVR (Context applicationContext, String videoName, String videoLink, String W, String H, String tiling, SharedPreferences preferences) {
+    static void startVR (Context applicationContext, String videoName, String videoLink, String W, String H, String tiling, String dynamicEditingFN, SharedPreferences preferences) {
         //Retrieving preferences
         if(preferences == null)
             preferences = PreferenceManager.getDefaultSharedPreferences(applicationContext);
@@ -56,6 +56,7 @@ abstract class StartVRApp {
             launchIntent.putExtra("W", Integer.parseInt(W));
             launchIntent.putExtra("H", Integer.parseInt(H));
             launchIntent.putExtra("tilesCSV", tiling);
+            launchIntent.putExtra("dynamicEditingFN", dynamicEditingFN);
             applicationContext.startActivity(launchIntent);
         } else {
             //Package not found: Retrieving and showing the error message
@@ -90,6 +91,7 @@ abstract class StartVRApp {
             launchIntent.putExtra("W", Integer.parseInt(preferences.getString("W", null)));
             launchIntent.putExtra("H", Integer.parseInt(preferences.getString("H", null)));
             launchIntent.putExtra("tilesCSV", preferences.getString("tilesCSV", null));
+            launchIntent.putExtra("dynamicEditingFN", preferences.getString("dynamicEditingFN", null));
             applicationContext.startActivity(launchIntent);
         } else {
             //Package not found: Retrieving and showing the error message
