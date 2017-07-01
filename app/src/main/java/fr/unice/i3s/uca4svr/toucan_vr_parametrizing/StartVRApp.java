@@ -53,6 +53,9 @@ abstract class StartVRApp {
             launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", false));
             launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", false));
             launchIntent.putExtra("freezingEventsLogging", preferences.getBoolean("freezingEventsLogging", false));
+            launchIntent.putExtra("snapchangeEventsLogging", preferences.getBoolean("snapchangeEventsLogging", false));
+            launchIntent.putExtra("realtimeEventsLogging", preferences.getBoolean("realtimeEventsLogging", false));
+            launchIntent.putExtra("serverIPAddress", preferences.getString("serverIPAddress", null));
             launchIntent.putExtra("W", Integer.parseInt(W));
             launchIntent.putExtra("H", Integer.parseInt(H));
             launchIntent.putExtra("tilesCSV", tiling);
@@ -88,6 +91,9 @@ abstract class StartVRApp {
             launchIntent.putExtra("headMotionLogging", preferences.getBoolean("headMotionLogging", false));
             launchIntent.putExtra("bandwidthLogging", preferences.getBoolean("bandwidthLogging", false));
             launchIntent.putExtra("freezingEventsLogging", preferences.getBoolean("freezingEventsLogging", false));
+            launchIntent.putExtra("snapchangeEventsLogging", preferences.getBoolean("snapchangeEventsLogging", false));
+            launchIntent.putExtra("realtimeEventsLogging", preferences.getBoolean("realtimeEventsLogging", false));
+            launchIntent.putExtra("serverIPAddress", preferences.getString("serverIPAddress", null));
             launchIntent.putExtra("W", Integer.parseInt(preferences.getString("W", null)));
             launchIntent.putExtra("H", Integer.parseInt(preferences.getString("H", null)));
             launchIntent.putExtra("tilesCSV", preferences.getString("tilesCSV", null));

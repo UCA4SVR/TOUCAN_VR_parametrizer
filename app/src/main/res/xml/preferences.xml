@@ -21,6 +21,21 @@
             android:summary="@string/PREFERENCE_freezing_log_summary"
             android:defaultValue="@bool/PREFERENCE_freezing_log_default"
             />
+        <CheckBoxPreference android:title="@string/PREFERENCE_snapchange_log_title"
+            android:key="@string/PREFERENCE_snapchange_log_key"
+            android:summary="@string/PREFERENCE_snapchange_log_summary"
+            android:defaultValue="@bool/PREFERENCE_snapchange_log_default"
+            />
+        <CheckBoxPreference android:title="@string/PREFERENCE_realtime_log_title"
+            android:key="@string/PREFERENCE_realtime_log_key"
+            android:summary="@string/PREFERENCE_realtime_log_summary"
+            android:defaultValue="@bool/PREFERENCE_realtime_log_default"
+            />
+        <EditTextPreference android:title="@string/PREFERENCE_server_IP_title"
+            android:key="@string/PREFERENCE_server_IP_key"
+            android:summary="@string/PREFERENCE_server_IP_summary"
+            android:defaultValue="@string/PREFERENCE_server_IP_default"
+            />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/PREFERENCE_video_list_category_title">
         <EditTextPreference android:title="@string/PREFERENCE_local_list_title"

@@ -24,6 +24,21 @@
     <string name="PREFERENCE_freezing_log_summary">Please choose if you want to log the freezing events or not</string>
     <bool name="PREFERENCE_freezing_log_default">false</bool>
 
+    <string name="PREFERENCE_snapchange_log_title">Snapchange events logging</string>
+    <string name="PREFERENCE_snapchange_log_key" translatable="false">snapchangeEventsLogging</string>
+    <string name="PREFERENCE_snapchange_log_summary">Please choose if you want to log if snapchanges are executed or not</string>
+    <bool name="PREFERENCE_snapchange_log_default">false</bool>
+
+    <string name="PREFERENCE_realtime_log_title">Realtime user position</string>
+    <string name="PREFERENCE_realtime_log_key" translatable="false">realtimeEventsLogging</string>
+    <string name="PREFERENCE_realtime_log_summary">Please choose if you want to push to the server the realtime position of the user. Enabling this feature will require to set the server IP address in the next preference</string>
+    <bool name="PREFERENCE_realtime_log_default">false</bool>
+
+    <string name="PREFERENCE_server_IP_title">Server IP Address</string>
+    <string name="PREFERENCE_server_IP_key" translatable="false">serverIPAddress</string>
+    <string name="PREFERENCE_server_IP_summary">Please set the server IP address if you want to push the realtime user position</string>
+    <string name="PREFERENCE_server_IP_default">10.0.0.5</string>
+
     <!-- Video List Category -->
     <string name="PREFERENCE_video_list_category_title">Video List</string>
 
