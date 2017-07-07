@@ -75,6 +75,11 @@
     <string name="PREFERENCE_max_buffer_summary">Please provide the default maximum duration of media that the player will attempt to buffer (milliseconds)</string>
     <integer name="PREFERENCE_max_buffer_default">30000</integer>
 
+    <string name="PREFERENCE_deactivate_replacement">Deactivate replacement</string>
+    <string name="PREFERENCE_deactivate_replacement_key" translatable="false">deactivateReplacement</string>
+    <string name="PREFERENCE_deactivate_replacement_summary">Please choose if you want to deactivate the tiles replacement strategy.</string>
+    <bool name="PREFERENCE_deactivate_replacement_default">false</bool>
+
     <!-- Tiling Category -->
     <string name="PREFERENCE_tiling_category_title">Temporary tiling parameters</string>
 

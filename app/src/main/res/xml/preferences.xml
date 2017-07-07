@@ -74,6 +74,11 @@
             android:defaultValue="@integer/PREFERENCE_max_buffer_default"
             android:inputType="number"
             />
+        <CheckBoxPreference android:title="@string/PREFERENCE_deactivate_replacement"
+                            android:key="@string/PREFERENCE_deactivate_replacement_key"
+                            android:summary="@string/PREFERENCE_deactivate_replacement_summary"
+                            android:defaultValue="@bool/PREFERENCE_deactivate_replacement_default"
+            />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/PREFERENCE_tiling_category_title">
         <EditTextPreference android:title="@string/PREFERENCE_grid_width_title"

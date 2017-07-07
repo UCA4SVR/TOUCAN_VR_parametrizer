@@ -56,6 +56,7 @@ abstract class StartVRApp {
             launchIntent.putExtra("snapchangeEventsLogging", preferences.getBoolean("snapchangeEventsLogging", false));
             launchIntent.putExtra("realtimeEventsLogging", preferences.getBoolean("realtimeEventsLogging", false));
             launchIntent.putExtra("serverIPAddress", preferences.getString("serverIPAddress", null));
+            launchIntent.putExtra("deactivateReplacement", preferences.getBoolean("deactivateReplacement", false));
             launchIntent.putExtra("W", Integer.parseInt(W));
             launchIntent.putExtra("H", Integer.parseInt(H));
             launchIntent.putExtra("tilesCSV", tiling);
