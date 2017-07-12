@@ -36,6 +36,11 @@
             android:summary="@string/PREFERENCE_server_IP_summary"
             android:defaultValue="@string/PREFERENCE_server_IP_default"
             />
+        <CheckBoxPreference android:title="@string/PREFERENCE_quality_log_title"
+            android:key="@string/PREFERENCE_quality_log_key"
+            android:summary="@string/PREFERENCE_quality_log_summary"
+            android:defaultValue="@bool/PREFERENCE_quality_log_default"
+            />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/PREFERENCE_video_list_category_title">
         <EditTextPreference android:title="@string/PREFERENCE_local_list_title"

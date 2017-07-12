@@ -56,6 +56,7 @@ abstract class StartVRApp {
             launchIntent.putExtra("snapchangeEventsLogging", preferences.getBoolean("snapchangeEventsLogging", false));
             launchIntent.putExtra("realtimeEventsLogging", preferences.getBoolean("realtimeEventsLogging", false));
             launchIntent.putExtra("serverIPAddress", preferences.getString("serverIPAddress", null));
+            launchIntent.putExtra("loggingQualityFoV", preferences.getBoolean("loggingQualityFoV", false));
             launchIntent.putExtra("deactivateReplacement", preferences.getBoolean("deactivateReplacement", false));
             launchIntent.putExtra("W", Integer.parseInt(W));
             launchIntent.putExtra("H", Integer.parseInt(H));
@@ -95,6 +96,8 @@ abstract class StartVRApp {
             launchIntent.putExtra("snapchangeEventsLogging", preferences.getBoolean("snapchangeEventsLogging", false));
             launchIntent.putExtra("realtimeEventsLogging", preferences.getBoolean("realtimeEventsLogging", false));
             launchIntent.putExtra("serverIPAddress", preferences.getString("serverIPAddress", null));
+            launchIntent.putExtra("loggingQualityFoV", preferences.getBoolean("loggingQualityFoV", false));
+            launchIntent.putExtra("deactivateReplacement", preferences.getBoolean("deactivateReplacement", false));
             launchIntent.putExtra("W", Integer.parseInt(preferences.getString("W", null)));
             launchIntent.putExtra("H", Integer.parseInt(preferences.getString("H", null)));
             launchIntent.putExtra("tilesCSV", preferences.getString("tilesCSV", null));

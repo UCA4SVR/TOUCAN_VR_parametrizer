@@ -39,6 +39,11 @@
     <string name="PREFERENCE_server_IP_summary">Please set the server IP address if you want to push the realtime user position</string>
     <string name="PREFERENCE_server_IP_default">10.0.0.5</string>
 
+    <string name="PREFERENCE_quality_log_title">Quality of tiles logging</string>
+    <string name="PREFERENCE_quality_log_key" translatable="false">loggingQualityFoV</string>
+    <string name="PREFERENCE_quality_log_summary">Please choose if you want to log the quality for each tile</string>
+    <bool name="PREFERENCE_quality_log_default">false</bool>
+
     <!-- Video List Category -->
     <string name="PREFERENCE_video_list_category_title">Video List</string>
 
