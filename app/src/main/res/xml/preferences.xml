@@ -21,6 +21,26 @@
             android:summary="@string/PREFERENCE_freezing_log_summary"
             android:defaultValue="@bool/PREFERENCE_freezing_log_default"
             />
+        <CheckBoxPreference android:title="@string/PREFERENCE_snapchange_log_title"
+            android:key="@string/PREFERENCE_snapchange_log_key"
+            android:summary="@string/PREFERENCE_snapchange_log_summary"
+            android:defaultValue="@bool/PREFERENCE_snapchange_log_default"
+            />
+        <CheckBoxPreference android:title="@string/PREFERENCE_realtime_log_title"
+            android:key="@string/PREFERENCE_realtime_log_key"
+            android:summary="@string/PREFERENCE_realtime_log_summary"
+            android:defaultValue="@bool/PREFERENCE_realtime_log_default"
+            />
+        <EditTextPreference android:title="@string/PREFERENCE_server_IP_title"
+            android:key="@string/PREFERENCE_server_IP_key"
+            android:summary="@string/PREFERENCE_server_IP_summary"
+            android:defaultValue="@string/PREFERENCE_server_IP_default"
+            />
+        <CheckBoxPreference android:title="@string/PREFERENCE_quality_log_title"
+            android:key="@string/PREFERENCE_quality_log_key"
+            android:summary="@string/PREFERENCE_quality_log_summary"
+            android:defaultValue="@bool/PREFERENCE_quality_log_default"
+            />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/PREFERENCE_video_list_category_title">
         <EditTextPreference android:title="@string/PREFERENCE_local_list_title"
@@ -59,6 +79,11 @@
             android:defaultValue="@integer/PREFERENCE_max_buffer_default"
             android:inputType="number"
             />
+        <CheckBoxPreference android:title="@string/PREFERENCE_deactivate_replacement"
+                            android:key="@string/PREFERENCE_deactivate_replacement_key"
+                            android:summary="@string/PREFERENCE_deactivate_replacement_summary"
+                            android:defaultValue="@bool/PREFERENCE_deactivate_replacement_default"
+            />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/PREFERENCE_tiling_category_title">
         <EditTextPreference android:title="@string/PREFERENCE_grid_width_title"
@@ -77,6 +102,11 @@
             android:key="@string/PREFERENCE_tiling_key"
             android:summary="@string/PREFERENCE_tiling_summary"
             android:defaultValue="@string/PREFERENCE_tiling_default"
+            />
+        <EditTextPreference android:title="@string/PREFERENCE_dynamic_title"
+                            android:key="@string/PREFERENCE_dynamic_key"
+                            android:summary="@string/PREFERENCE_dynamic_summary"
+                            android:defaultValue="@string/PREFERENCE_dynamic_default"
             />
     </PreferenceCategory>
 </PreferenceScreen>
