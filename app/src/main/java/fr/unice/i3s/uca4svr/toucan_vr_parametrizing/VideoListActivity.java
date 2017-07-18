@@ -68,6 +68,7 @@ public class VideoListActivity extends AppCompatActivity {
                             videos.get(position).getW(),
                             videos.get(position).getH(),
                             videos.get(position).getTiling(),
+                            videos.get(position).getDynamicEditingFN(),
                             preferences);
                 }
             });

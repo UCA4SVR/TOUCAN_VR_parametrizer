@@ -19,6 +19,31 @@
     <string name="PREFERENCE_bandwidth_log_summary">Please choose if you want to log the bandwidth consumption or not</string>
     <bool name="PREFERENCE_bandwidth_log_default">false</bool>
 
+    <string name="PREFERENCE_freezing_log_title">Freezing events logging</string>
+    <string name="PREFERENCE_freezing_log_key" translatable="false">freezingEventsLogging</string>
+    <string name="PREFERENCE_freezing_log_summary">Please choose if you want to log the freezing events or not</string>
+    <bool name="PREFERENCE_freezing_log_default">false</bool>
+
+    <string name="PREFERENCE_snapchange_log_title">Snapchange events logging</string>
+    <string name="PREFERENCE_snapchange_log_key" translatable="false">snapchangeEventsLogging</string>
+    <string name="PREFERENCE_snapchange_log_summary">Please choose if you want to log if snapchanges are executed or not</string>
+    <bool name="PREFERENCE_snapchange_log_default">false</bool>
+
+    <string name="PREFERENCE_realtime_log_title">Realtime user position</string>
+    <string name="PREFERENCE_realtime_log_key" translatable="false">realtimeEventsLogging</string>
+    <string name="PREFERENCE_realtime_log_summary">Please choose if you want to push to the server the realtime position of the user. Enabling this feature will require to set the server IP address in the next preference</string>
+    <bool name="PREFERENCE_realtime_log_default">false</bool>
+
+    <string name="PREFERENCE_server_IP_title">Server IP Address</string>
+    <string name="PREFERENCE_server_IP_key" translatable="false">serverIPAddress</string>
+    <string name="PREFERENCE_server_IP_summary">Please set the server IP address if you want to push the realtime user position</string>
+    <string name="PREFERENCE_server_IP_default">10.0.0.5</string>
+
+    <string name="PREFERENCE_quality_log_title">Quality of tiles logging</string>
+    <string name="PREFERENCE_quality_log_key" translatable="false">loggingQualityFoV</string>
+    <string name="PREFERENCE_quality_log_summary">Please choose if you want to log the quality for each tile</string>
+    <bool name="PREFERENCE_quality_log_default">false</bool>
+
     <!-- Video List Category -->
     <string name="PREFERENCE_video_list_category_title">Video List</string>
 
@@ -55,6 +80,11 @@
     <string name="PREFERENCE_max_buffer_summary">Please provide the default maximum duration of media that the player will attempt to buffer (milliseconds)</string>
     <integer name="PREFERENCE_max_buffer_default">30000</integer>
 
+    <string name="PREFERENCE_deactivate_replacement">Deactivate replacement</string>
+    <string name="PREFERENCE_deactivate_replacement_key" translatable="false">deactivateReplacement</string>
+    <string name="PREFERENCE_deactivate_replacement_summary">Please choose if you want to deactivate the tiles replacement strategy.</string>
+    <bool name="PREFERENCE_deactivate_replacement_default">false</bool>
+
     <!-- Tiling Category -->
     <string name="PREFERENCE_tiling_category_title">Temporary tiling parameters</string>
 
@@ -72,4 +102,9 @@
     <string name="PREFERENCE_tiling_key" translatable="false">tilesCSV</string>
     <string name="PREFERENCE_tiling_summary">Please provide the tiles definition as a CSV String</string>
     <string name="PREFERENCE_tiling_default">"0,0,1,1,1,0,1,1,2,0,1,1,0,1,1,1,1,1,1,1,2,1,1,1,0,2,1,1,1,2,1,1,2,2,1,1"</string>
+
+    <string name="PREFERENCE_dynamic_title">Dynamic Editing XML file path</string>
+    <string name="PREFERENCE_dynamic_key" translatable="false">dynamicEditingFN</string>
+    <string name="PREFERENCE_dynamic_summary">Please provide the name of the current file containing dynamic editing details</string>
+    <string name="PREFERENCE_dynamic_default">"toucan/dynamic.xml"</string>
 </resources>

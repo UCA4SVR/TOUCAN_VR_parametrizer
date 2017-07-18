@@ -83,9 +83,9 @@ class XmlParser {
                             if (video!=null) video.setH(text);
                         } else if (tagname.equalsIgnoreCase("tiling")) {
                             if (video!=null) video.setTiling(text);
+                        } else if (tagname.equalsIgnoreCase("dynamic")) {
+                            if (video!=null) video.setDynamicEditingFN(text);
                         }
-
-
                         break;
 
                     default:
