@@ -58,6 +58,7 @@ abstract class StartVRApp {
             launchIntent.putExtra("serverIPAddress", preferences.getString("serverIPAddress", null));
             launchIntent.putExtra("loggingQualityFoV", preferences.getBoolean("loggingQualityFoV", false));
             launchIntent.putExtra("deactivateReplacement", preferences.getBoolean("deactivateReplacement", false));
+            launchIntent.putExtra("loggingReplacement", preferences.getBoolean("loggingReplacement", false));
             launchIntent.putExtra("W", Integer.parseInt(W));
             launchIntent.putExtra("H", Integer.parseInt(H));
             launchIntent.putExtra("tilesCSV", tiling);
