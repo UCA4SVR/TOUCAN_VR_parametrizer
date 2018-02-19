@@ -21,25 +21,37 @@ It is possible to tune the following parameters:
 > Choose whether to log the bandwidth consumption or not
 3. Head motion logging
 > Choose whether to log the head motion or not
-4. Local video XML file
+4. Freezes logging
+> Choose whether to log the stalls occurred during the playback or not
+5. Snapchanges Logging
+> When Dynamic editing is enabled, snapchanges can be triggered or not (depending on the user position). This option allows to log whether a snapchange has been triggered or not.
+6. Realtime events Logging
+> Choose whether trasmit the user position to the server identified by the 7 to enable the out of headset playback
+7. Server IP address
+> IP address of the server hosting the out of headset playback (see https://github.com/UCA4SVR/TOUCAN_visu_web)
+8. Quality in the Field of View Logging
+> Choose whether to log the quality displayed in the field of view or not
+9. Replacement
+> Choose whether activate or not the replacement strategy
+10. Local video XML file
 > Path of a xml file containing all possible videos the user can play. The path must be a relative path from "/storage/emulated/0/" device directory. The structure of the XML file is reported below.
-5. Remote video XML file
+11. Remote video XML file
 > The application is able to download a remote xml file containing the list of videos. It will be downloaded in the same directory currently specified in the previous preference (e.g., if the remote link is http://www.example.org/remotevideo.xml and the local video xml file is Toucan/video.xml the new file will be Toucan/remotevideo.xml)
-6. Startup buffer Size
+12. Startup buffer Size
 > This parameter will be transmitted to the VR application to set in EXOPlayer the required portion of video (in milliseconds) that must be in the buffer for starting the video playback
-7. Startup buffer Size after a re-buffering event
+13. Startup buffer Size after a re-buffering event
 > This parameter will be transmitted to the VR application to set in EXOPlayer the required portion of video (in milliseconds) that must be in the buffer for starting the video playback after a stall event     
-8. Min Buffer size     
+14. Min Buffer size     
 > The default minimum duration of media (in milliseconds) that the player will attempt to ensure is buffered at all times.     
-9. Max Buffer size      
+15. Max Buffer size      
 > The default maximum duration of media (in milliseconds) that the player will attempt to buffer. 
-10. W      
+16. W      
 > Grid Weight of the full video (only when URL is manually inserted)
-11. H     
+17. H     
 > Grid Height of the full video (only when URL is manually inserted)
-12. CSV for tiles     
+18. CSV for tiles     
 > A string representing all the tiles each one in the format: x,y,w,h (only when URL is manually inserted)
-13. XML for dynamic editing      
+19. XML for dynamic editing      
 > A string representing the file relative path starting from storage/emulated/0/ (only when URL is manually inserted)
 
 ## XML video file    
@@ -96,7 +108,33 @@ A full example is now provided:
     </video>
 </videos>
 ```
-  
+
+## Dynamic editing XML   
+If Dynamic editing is enabled, TOUCAN_VR will search for an xml file containing a list of snapchanges.
+Each snapchange information is encoded in a xml tag named snapchange and containing the following sub-tags.    
+1. &lt;milliseconds&gt;:
+> Milliseconds of the video where the snapchange must be evaluated and triggered
+2. &lt;roiDegrees&gt;:
+> Position of the RoI that must be in the field of view after the snapchange. This value must range between -180 and 180 degrees
+3. &lt;foVTile&gt;:
+> CSV string containing the tiles that are in the user's field of view after the snapchange and that will be downloaded with the maximum available quality
+
+An example is now provided:   
+ 
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<snapchange>
+    <milliseconds>5000</milliseconds>
+    <roiDegrees>45</roiDegrees>
+    <foVTile>1,2,4,5</foVTile>
+</snapchange>
+<snapchange>
+    <milliseconds>10000</milliseconds>
+    <roiDegrees>170</roiDegrees>
+    <foVTile>2,4,5</foVTile>
+</snapchange>
+```
+
 <img src="https://preview.ibb.co/hptmrF/Screenshot_1490180190.png" alt="main" width="300">    
 
 ## Show a list of videos    
