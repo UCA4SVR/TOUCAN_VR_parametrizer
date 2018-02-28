@@ -3,7 +3,27 @@
 This application has three main purposes:  
 1. Tune network parameters and logging features of TOUCAN_VR
 2. Choose the content to be played
-3. Start TOUCAN_VR
+3. Start TOUCAN_VR [1]
+
+Created by:
+
+Universite Nice Sophia Antipolis (Universite Cote d'Azur) and CNRS  
+Laboratoire d'Informatique, Signaux et Systèmes de Sophia Antipolis (I3S)
+
+Contributors:
+
+Savino DAMBRA  
+Giuseppe SAMELA  
+Lucile SASSATELLI  
+Romaric PIGHETTI  
+Ramon APARICIO-PARDO  
+Anne-Marie PINNA-DERY
+
+References:
+
+[1] TOUCAN-VR, https://github.com/UCA4SVR/TOUCAN-VR     
+[2] S. Dambra, G. Samela, L. Sassatelli, R. Pighetti, R. Aparicio-Pardo, A. Pinna-Déry "Film Editing: New Levers to Improve VR Streaming", ACM Multimedia Systems Conference (MMSys), Amsterdam, The Netherlands, June 2018.
+
 
 ## Build and install
 
