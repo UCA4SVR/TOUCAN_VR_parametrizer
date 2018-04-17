@@ -79,7 +79,7 @@ The XML file must contain the following line as first one
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 ```
-The big tag container is &lt;videos&gt;&lt;/videos&gt; and each video entry is enclosed within the tags &lt;video&gt;&lt;/video&gt;. It is possible to specify five (5) video properties including them in the tag "video" and surrounding them with a specific tag as shown below:     
+The big tag container is &lt;videos&gt;&lt;/videos&gt; and each video entry is enclosed within the tags &lt;video&gt;&lt;/video&gt;. It is possible to specify nine (9) video properties including them in the tag "video" and surrounding them with a specific tag as shown below:     
 1. &lt;name&gt;:
 > Title of the video
 2. &lt;link&gt;:
@@ -107,7 +107,7 @@ A full example is now provided:
 <videos>
     <video>
         <name>Roller Coaster</name>
-        <link>http://www.unice.fr</link>
+        <link>http://www.unice.fr/video.mpd</link>
         <bitrate>64k</bitrate>
         <standard>Dash</standard>
         <W>3</W>
